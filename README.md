@@ -14,11 +14,11 @@ This is not a convo flow chart. This will not suggest when to request admin cred
 
 Premise
 ---
-This framework works on the premise that WordPress and our plugins always works in a stock enviroment.
+This framework works on the premise that WordPress and our plugins always work in a stock environment.
 
-A stock enviroment means an unmodified, up-to-date codebase of both WordPress and our plugin(s).
+A stock environment means an unmodified, up-to-date codebase of both WordPress and our plugin(s).
 
-A stock enviroment also includes the host, which vary greatly. For our purposes, verifying that WordPress and our plugins have what they need is usually adequate.
+A stock environment also includes the host, which varies greatly. For our purposes, verifying that WordPress and our plugins have what they need is usually adequate.
 
 Instructions
 ---
