@@ -1,6 +1,6 @@
 <convo>
 	<step>Is the convo an issue or question.</step>
-	<issues>
+	<issue>
 		<step>Understand the issue.</step>
 		<configuration>
 			<step>Research the answer.</step>
@@ -22,15 +22,17 @@
 				</themes>
 				<plugins>
 					<mailchimp-for-memberships>
-						<sync-issues>
-							<step>Enable plugin logging<step>
-							<step>Review logs for issues</step>
-							<incomplete-syncs>
-								<step>Find which members are not syncing</step>
-								<step>Sync single member</step>
-								<step>Review log for detailed API response</step>
-							</incomplete-syncs>
-						</sync-issues>
+						<issues>
+							<syncing>
+								<step>Enable plugin logging<step>
+								<step>Review logs for issues</step>
+								<incomplete-syncs>
+									<step>Find which members are not syncing</step>
+									<step>Sync single member</step>
+									<step>Review log for detailed API response</step>
+								</incomplete-syncs>
+							</syncing>
+						</issues>
 					</mailchimp-for-memberships>
 					<gateways>
 						<step>Enable gateway logging<step>
@@ -44,6 +46,13 @@
 								<step>Research response codes.<step>
 							</response>
 						</logging>
+						<moneris>
+							<issues>
+								<v3_0-upgrade>
+									<todo />
+								</v3_0-upgrade>
+							</issues>
+						</moneris>
 					</gateways>
 				</plugins>
 			</wordpress>
@@ -56,10 +65,10 @@
 				</emails>
 			</behavior>
 		</errors>
-	</issues>
-	<questions>
+	</issue>
+	<question>
 		<step>Understand the issue.</step>
 		<step>Research the answer.</step>
-	</questions>
+	</question>
 	<step>Respond to customer.</step>
 </convo>
