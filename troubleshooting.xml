@@ -8,10 +8,10 @@
 		<errors>
 			<step>Replicate the issue.</step>
 			<php>
-				<step>Enable WP Debug<step>
-				<step>Review error logs<step>
-				<step>Test for code conflicts<step>
-				<step>Check Site Health in WP Admin<step>
+				<step>Enable WP Debug</step>
+				<step>Review error logs</step>
+				<step>Test for code conflicts</step>
+				<step>Check Site Health in WP Admin</step>
 			</php>
 			<wordpress>
 				<core>
@@ -22,22 +22,22 @@
 				</themes>
 				<plugins>
 					<gateways>
-						<step>Enable gateway logging<step>
-						<step>Review gateway logs<step>
+						<step>Enable gateway logging</step>
+						<step>Review gateway logs</step>
 						<logging>
 							<request>
-								<step>Review what information sent.<step>
+								<step>Review what information sent.</step>
 							</request>
 							<response>
-								<step>Review the response.<step>
-								<step>Research response codes.<step>
+								<step>Review the response.</step>
+								<step>Research response codes.</step>
 							</response>
 						</logging>
 						<moneris>
 							<issues>
 								<v3_0-upgrade>
 									<checkout-form-continual-reloading>
-										<step>Test for code conflicts<step>
+										<step>Test for code conflicts</step>
 									</checkout-form-continual-reloading>
 								</v3_0-upgrade>
 							</issues>
@@ -46,7 +46,7 @@
 					<mailchimp-for-memberships>
 						<issues>
 							<syncing>
-								<step>Enable plugin logging<step>
+								<step>Enable plugin logging</step>
 								<step>Review logs for issues</step>
 								<incomplete-syncs>
 									<step>Find which members are not syncing</step>
@@ -60,8 +60,8 @@
 			</wordpress>
 			<behavior>
 				<step>Verify expected behavior</step>
-				<step>Test for code conflicts<step>
-				<step>Check Site Health in WP Admin<step>
+				<step>Test for code conflicts</step>
+				<step>Check Site Health in WP Admin</step>
 				<emails>
 					<step>Email Logging</step>
 				</emails>
