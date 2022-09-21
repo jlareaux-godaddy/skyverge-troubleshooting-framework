@@ -13,19 +13,32 @@
 				<step>Test for code conflicts<step>
 				<step>Check Site Health in WP Admin<step>
 			</php>
-			<gateways>
-				<step>Enable gateway logging<step>
-				<step>Review gateway logs<step>
-				<logging>
-					<request>
-						<step>Review what information sent.<step>
-					</request>
-					<response>
-						<step>Review the response.<step>
-						<step>Research response codes.<step>
-					</response>
-				</logging>
-			</gateways>
+			<wordpress>
+				<core>
+					<todo />
+				</core>
+				<themes>
+					<todo />
+				</themes>
+				<plugins>
+					<mailchimp-for-memberships>
+						<todo />
+					</mailchimp-for-memberships>
+					<gateways>
+						<step>Enable gateway logging<step>
+						<step>Review gateway logs<step>
+						<logging>
+							<request>
+								<step>Review what information sent.<step>
+							</request>
+							<response>
+								<step>Review the response.<step>
+								<step>Research response codes.<step>
+							</response>
+						</logging>
+					</gateways>
+				</plugins>
+			</wordpress>
 			<behavior>
 				<step>Verify expected behavior</step>
 				<step>Test for code conflicts<step>
