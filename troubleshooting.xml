@@ -21,19 +21,6 @@
 					<todo />
 				</themes>
 				<plugins>
-					<mailchimp-for-memberships>
-						<issues>
-							<syncing>
-								<step>Enable plugin logging<step>
-								<step>Review logs for issues</step>
-								<incomplete-syncs>
-									<step>Find which members are not syncing</step>
-									<step>Sync single member</step>
-									<step>Review log for detailed API response</step>
-								</incomplete-syncs>
-							</syncing>
-						</issues>
-					</mailchimp-for-memberships>
 					<gateways>
 						<step>Enable gateway logging<step>
 						<step>Review gateway logs<step>
@@ -49,11 +36,26 @@
 						<moneris>
 							<issues>
 								<v3_0-upgrade>
-									<todo />
+									<checkout-form-continual-reloading>
+										<step>Test for code conflicts<step>
+									</checkout-form-continual-reloading>
 								</v3_0-upgrade>
 							</issues>
 						</moneris>
 					</gateways>
+					<mailchimp-for-memberships>
+						<issues>
+							<syncing>
+								<step>Enable plugin logging<step>
+								<step>Review logs for issues</step>
+								<incomplete-syncs>
+									<step>Find which members are not syncing</step>
+									<step>Sync single member</step>
+									<step>Review log for detailed API response</step>
+								</incomplete-syncs>
+							</syncing>
+						</issues>
+					</mailchimp-for-memberships>
 				</plugins>
 			</wordpress>
 			<behavior>
