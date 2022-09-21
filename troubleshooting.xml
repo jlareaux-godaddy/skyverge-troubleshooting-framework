@@ -22,7 +22,15 @@
 				</themes>
 				<plugins>
 					<mailchimp-for-memberships>
-						<todo />
+						<sync-issues>
+							<step>Enable plugin logging<step>
+							<step>Review logs for issues</step>
+							<incomplete-syncs>
+								<step>Find which members are not syncing</step>
+								<step>Sync single member</step>
+								<step>Review log for detailed API response</step>
+							</incomplete-syncs>
+						</sync-issues>
 					</mailchimp-for-memberships>
 					<gateways>
 						<step>Enable gateway logging<step>
