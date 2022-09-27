@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>SkyVerge Troubleshooting Framework</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			.tree,
+			.tree ul {
+				margin:0;
+				padding:0;
+				list-style:none
+			}
+			.tree ul {
+				margin-left:1em;
+				position:relative
+			}
+			.tree ul ul {
+				margin-left:.5em
+			}
+			.tree ul:before {
+				content:"";
+				display:block;
+				width:0;
+				position:absolute;
+				top:0;
+				bottom:0;
+				left:0;
+				border-left:1px solid
+			}
+			.tree li {
+				margin:0;
+				padding:0 1em;
+				line-height:2em;
+				color:#369;
+				/*font-weight:700;*/
+				position:relative
+			}
+			.tree ul li:before {
+				content:"";
+				display:block;
+				width:10px;
+				height:0;
+				border-top:1px solid;
+				margin-top:-1px;
+				position:absolute;
+				top:1em;
+				left:0
+			}
+			.tree ul li:last-child:before {
+				background:#fff;
+				height:auto;
+				top:1em;
+				bottom:0
+			}
+			.indicator {
+				margin-right:5px;
+			}
+			.tree li a {
+				text-decoration: none;
+				color:#369;
+			}
+			.tree li button, .tree li button:active, .tree li button:focus {
+				text-decoration: none;
+				color:#369;
+				border:none;
+				background:transparent;
+				margin:0px 0px 0px 0px;
+				padding:0px 0px 0px 0px;
+				outline: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container">
+		
+			<div class="page-header">
+				<h1>SkyVerge Troubleshooting Framework</h1>
+			</div>
+
+			<ul id="tree">
+				<li><strong>Step:</strong> <a href="#">Review the convo.</a></li>
+				<li>Issue
+					<ul>
+						<li><strong>Step:</strong> <a href="#">Understand the issue.</a></li>
+						<li>Configuration
+							<ul>
+								<li><strong>Step:</strong> <a href="#">Research the answer.</a></li>
+							</ul>
+						</li>
+						<li>Errors
+							<ul>
+								<li><strong>Step:</strong> <a href="#">Replicate the issue.</a></li>
+								<li>PHP
+									<ul>
+										<li><strong>Step:</strong> <a href="#">Enable WP Debug</a></li>
+										<li><strong>Step:</strong> <a href="#">Review error logs</a></li>
+										<li><strong>Step:</strong> <a href="#">Check Site Health in WP Admin</a></li>
+										<li><strong>Step:</strong> <a href="#">Test for code conflicts</a></li>
+									</ul>
+								</li>
+								<li>WordPress
+									<ul>
+										<li>Core
+											<ul>
+												<li>Todo.</li>
+											</ul>
+										</li>
+										<li>Themes
+											<ul>
+												<li>Todo.</li>
+											</ul>
+										</li>
+										<li>Plugins
+											<ul>
+												<li>Gateways
+													<ul>
+														<li><strong>Step:</strong> <a href="#">Enable gateway logging</a></li>
+														<li><strong>Step:</strong> <a href="#">Review gateway logs</a></li>
+														<li>Logging
+															<ul>
+																<li>Request
+																	<ul>
+																		<li><strong>Step:</strong> <a href="#">Review what information sent.</a></li>
+																	</ul>
+																</li>
+																<li>Response
+																	<ul>
+																		<li><strong>Step:</strong> <a href="#">Review the response.</a></li>
+																		<li><strong>Step:</strong> <a href="#">Research response codes.</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														<li>Moneris
+															<ul>
+																<li>Issues
+																	<ul>
+																		<li>v3.0 Upgrade
+																			<ul>
+																				<li>Checkout form continual reloading
+																					<ul>
+																						<li><strong>Step:</strong> <a href="#">Test for code conflicts</a></li>
+																					</ul>
+																				</li>
+																			</ul>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li>Mailchimp for Memberships
+													<ul>
+														<li>Issues
+															<ul>
+																<li>Syncing
+																	<ul>
+																		<li><strong>Step:</strong> <a href="#">Check for other MailChimp plugins</a></li>
+																		<li><strong>Step:</strong> <a href="#">Enable plugin logging</a></li>
+																		<li><strong>Step:</strong> <a href="#">Review logs for issues</a></li>
+																		<li>Incomplete Sync
+																			<ul>
+																				<li><strong>Step:</strong> <a href="#">Find which members are not syncing</a></li>
+																				<li><strong>Step:</strong> <a href="#">Sync single member</a></li>
+																				<li><strong>Step:</strong> <a href="#">Review log for detailed API response</a></li>
+																			</ul>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>Behavior
+									<ul>
+										<li><strong>Step:</strong> <a href="#">Verify expected behavior</a></li>
+										<li><strong>Step:</strong> <a href="#">Test for code conflicts</a></li>
+										<li><strong>Step:</strong> <a href="#">Check Site Health in WP Admin</a></li>
+										<li>Emails
+											<ul>
+												<li><strong>Step:</strong> <a href="#">Email Logging</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Question
+					<ul>
+						<li><strong>Step:</strong> <a href="#">Understand the question.</a></li>
+						<li><strong>Step:</strong> <a href="#">Research the answer.</a></li>
+					</ul>
+				</li>
+				<li><strong>Step:</strong> <a href="#">Respond to customer.</a></li>
+			</ul>
+
+		</div><!-- /.container -->
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$.fn.extend({
+				treed: function (o) {
+					var openedClass = 'glyphicon-minus-sign';
+					var closedClass = 'glyphicon-plus-sign';
+					if (typeof o != 'undefined') {
+						if (typeof o.openedClass != 'undefined') {
+							openedClass = o.openedClass;
+						}
+						if (typeof o.closedClass != 'undefined') {
+							closedClass = o.closedClass;
+						}
+					};
+					//initialize each of the top levels
+					var tree = $(this);
+					tree.addClass("tree");
+					tree.find('li').has("ul").each(function () {
+						var branch = $(this); //li with children ul
+						branch.prepend("<i class='indicator glyphicon " + closedClass + "'></i>");
+						branch.addClass('branch');
+						branch.on('click', function (e) {
+							if (this == e.target) {
+								var icon = $(this).children('i:first');
+								icon.toggleClass(openedClass + " " + closedClass);
+								$(this).children().children().toggle();
+							}
+						});
+						branch.children().children().toggle();
+					});
+					//fire event from the dynamically added icon
+					tree.find('.branch .indicator').each(function () {
+						$(this).on('click', function () {
+							$(this).closest('li').click();
+						});
+					});
+					//fire event to open branch if the li contains an anchor instead of text
+					tree.find('.branch>a').each(function () {
+						$(this).on('click', function (e) {
+							$(this).closest('li').click();
+							e.preventDefault();
+						});
+					});
+					//fire event to open branch if the li contains a button instead of text
+					tree.find('.branch>button').each(function () {
+						$(this).on('click', function (e) {
+							$(this).closest('li').click();
+							e.preventDefault();
+						});
+					});
+				}
+			});
+			//Initialize treeview
+			$('#tree').treed({ openedClass: 'glyphicon-chevron-down', closedClass: 'glyphicon-chevron-right' });
+		</script>
+	</body>
+</html>
