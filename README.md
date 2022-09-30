@@ -22,7 +22,7 @@ A stock environment also includes the host, which varies greatly. For our purpos
 
 Purpose
 ---
-This framework works is meant for daily use as a quick reference, or deep dive if needed. Between simply reading a step, the extended description, or a linked Confluence article, you can get the information you need to move a conversation forward.
+This framework work is meant for daily use as a quick reference, or deep dive if needed. Between simply reading a step, the extended description, or a linked Confluence article, you can get the information you need to move a conversation forward.
 
 Instructions
 ---
