@@ -20,6 +20,10 @@ A stock environment means an unmodified, up-to-date codebase of both WordPress a
 
 A stock environment also includes the host, which varies greatly. For our purposes, verifying that WordPress and our plugins have what they need is usually adequate.
 
+Purpose
+---
+This framework works is meant for daily use as a quick reference, or deep dive if needed. Between simply reading a step, the extended description, or a linked Confluence article, you can get the information you need to move a conversation forward.
+
 Instructions
 ---
 This is an XML document which is meant to be read from top to bottom, entering into child elements as troubleshooting paths.
