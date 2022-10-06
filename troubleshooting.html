@@ -84,6 +84,9 @@
 				padding:0px 0px 0px 0px;
 				outline: 0;
 			}
+			#toggle {
+				/*float: right;*/
+			}
 		</style>
 	</head>
 
@@ -94,6 +97,8 @@
 			<div class="page-header">
 				<h1>SkyVerge Troubleshooting Framework</h1>
 			</div>
+
+			<button id="toggle" type="button" class="btn btn-secondary btn-sm">Expand/Collapse</button>
 
 			<ul id="tree">
 				<li><strong>Step:</strong> <a href="#">Review the convo.</a></li>
@@ -279,6 +284,13 @@
 			});
 			//Initialize treeview
 			$('#tree').treed({ openedClass: 'glyphicon-chevron-down', closedClass: 'glyphicon-chevron-right' });
+
+			// Expand / Collapse
+			$("#toggle").click(function(){
+				$("#tree").find('li').each(function () {
+					$(this).click();
+				});
+			});
 		</script>
 	</body>
 </html>
